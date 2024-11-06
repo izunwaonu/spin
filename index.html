@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin Game with Full Image Pop-up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Spin the Wheel!</h1>
+    <div class="spinner" id="spinner">
+        <div class="segment" style="background-image: url('kitchen.png');"></div>
+        <div class="segment" style="background-image: url('living-room.png');"></div>
+        <div class="segment" style="background-image: url('bathroom.png');"></div>
+        <div class="segment" style="background-image: url('bedroom.png');"></div>
+        <div class="segment" style="background-image: url('mom.png');"></div>
+        <div class="segment" style="background-image: url('dad.png');"></div>
+        <div class="segment" style="background-image: url('grandma.png');"></div>
+        <div class="segment" style="background-image: url('grandpa.png');"></div>
+    </div>
+    <button onclick="spin()">Spin</button>
+    <audio id="spinSound" src="spin.mp3" preload="auto"></audio>
+    <audio id="popSound" src="pop.mp3" preload="auto"></audio>
+
+    <!-- Result display with large image pop-up -->
+    <div id="result" class="result">
+        <img id="resultImage" class="result-image" src="" alt="Selected Image">
+        <div id="resultText"></div>
+    </div>
+
+    <script src="script.js"></script>
+</div>
+
+</body>
+</html>
